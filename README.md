@@ -4,20 +4,75 @@ Welcome to the comprehensive guide for building effective AI agents! This reposi
 
 ## 📚 Documentation
 
-**[Read the Complete Best Practices Guide →](BEST_PRACTICES.md)**
+- **[Getting Started Guide](GETTING_STARTED.md)** - New to building agents? Start here!
+- **[Complete Best Practices](BEST_PRACTICES.md)** - Comprehensive guide with all best practices
+- **[Quick Reference](QUICK_REFERENCE.md)** - Cheat sheet for common patterns
+- **[Code Examples](examples/)** - Working code demonstrating best practices
+- **[Contributing](CONTRIBUTING.md)** - How to contribute to this guide
 
 ## 🎯 What's Covered
 
 This guide provides comprehensive coverage of:
 
-- **Core Principles**: Fundamental concepts for agent design
-- **Design Patterns**: Proven architectural patterns (Reactive, Deliberative, Hybrid, Learning)
-- **Implementation Guidelines**: Practical code examples and best practices
-- **Security Considerations**: Protecting against common vulnerabilities
-- **Performance Optimization**: Making your agent fast and efficient
-- **Testing & Validation**: Ensuring quality and reliability
-- **Monitoring & Observability**: Understanding agent behavior in production
-- **Common Pitfalls**: Learning from common mistakes
+### Core Concepts
+- **[Core Principles](BEST_PRACTICES.md#core-principles)**: Fundamental concepts for agent design
+- **[Design Patterns](BEST_PRACTICES.md#design-patterns)**: Proven architectural patterns (Reactive, Deliberative, Hybrid, Learning)
+- **[Implementation Guidelines](BEST_PRACTICES.md#implementation-guidelines)**: Practical code examples and best practices
+
+### Security & Performance
+- **[Security Considerations](BEST_PRACTICES.md#security-considerations)**: Protecting against common vulnerabilities
+- **[Performance Optimization](BEST_PRACTICES.md#performance-optimization)**: Making your agent fast and efficient
+- **[Resource Management](BEST_PRACTICES.md#2-resource-management)**: Efficient use of compute and memory
+
+### Quality & Operations
+- **[Testing & Validation](BEST_PRACTICES.md#testing-and-validation)**: Ensuring quality and reliability
+- **[Monitoring & Observability](BEST_PRACTICES.md#monitoring-and-observability)**: Understanding agent behavior in production
+- **[Common Pitfalls](BEST_PRACTICES.md#common-pitfalls)**: Learning from common mistakes
+
+## 🏗️ Agent Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                     USER INPUT                          │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│                INPUT VALIDATION                         │
+│  • Length checks  • Format validation  • Security      │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│                  PERCEPTION LAYER                       │
+│  • Parse input  • Extract intent  • Build context      │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│                  DECISION ENGINE                        │
+│  • Evaluate rules  • Plan actions  • Select response   │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│                   ACTION LAYER                          │
+│  • Execute action  • Call APIs  • Update state         │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│                 RESPONSE GENERATION                     │
+│  • Format output  • Add context  • Validate            │
+└────────────────────────┬────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────┐
+│                   USER OUTPUT                           │
+└─────────────────────────────────────────────────────────┘
+
+        [Logging & Monitoring throughout all layers]
+```
 
 ## 🚀 Quick Start
 
